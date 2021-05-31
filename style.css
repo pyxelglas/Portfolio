@@ -1,0 +1,129 @@
+body {
+    font-family: Tahoma;
+    align-content: center;
+    background-color: rgba(72, 64, 95, 0.8);
+    color: rgb(72, 64, 95);
+ }
+.intro {
+    background-color: rgba(211, 205, 243, 0.4);
+    padding: 230px 5% 250px 5%;
+    margin: -10% -0.1%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+h2 {
+    border-radius: 10px;  
+    background-color: rgb(211, 205, 243);
+    padding: 20px 25px 20px 25px;
+    font-size: 150%;
+}
+h3 {  
+    border-radius: 10px;  
+    background-color: rgb(211, 205, 243);
+    margin: 15px 20% 40px;
+    padding: 20px 10%;
+    font-size: 150%;
+}
+h4 {  
+    color: rgb(211, 205, 243);
+    margin: 10px 50px 40px 50px;
+    padding: 20px 20% 20px 20%;
+    font-size: 100%;
+}
+.next {
+    float: right; 
+    background-color: rgb(211, 205, 243);
+    padding: 10px 20px;
+    margin-top: 15%;
+    margin-left: 5%;
+    size: 100px;
+    position: absolute;
+    box-shadow: 5px 5px rgba(211, 205, 243, 0.4);
+    border-color:rgb(211, 205, 243);
+}
+.next:hover {
+    background-color: rgba(211, 205, 243, 0.8);
+    cursor: url("Images/emojicursor.png"), auto;
+}
+#pixel-info {
+    padding-bottom: 6em;
+}
+.skill {
+    font-size: 100%;
+    text-decoration: bold;
+    border-color: rgb(72, 64, 95);
+    margin: 5% 20%;
+}
+#portrait {
+    height: 400px;
+    width: 400px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20%;
+}
+#portrait:hover{
+    cursor: url("Images/emojicursor.png"), auto;
+}
+.music {
+    box-shadow: 0 0 50px rgba(211, 205, 243, 0.4);
+    color:rgb(211, 205, 243);
+    background-color: rgba(72, 64, 95, 0.8);
+    padding: 40px 0.5% 10%;
+    margin: 4% 22% 2%;
+    padding: 10% auto;
+    border-radius: 10%;
+}
+div ul li {
+    text-decoration: none;
+    padding: 1% 0.5%;
+    margin: 0% 4% 1px 0%;
+    list-style-type: none;
+}
+.Contacts {
+    padding: 10px; margin: 2px;
+    list-style-type: none;
+    text-decoration: none;
+    color:rgb(211, 205, 243);
+    padding: 15% auto;
+}
+a {
+    color:rgb(211, 205, 243);
+}
+#title {
+    margin: -10% auto 10%;
+}
+footer p a {
+    background-color: rgba(72, 64, 95, 0.4);
+    border-radius: 5%;
+    text-decoration: none;
+}
+footer p a:hover {
+    
+    text-decoration: underline;
+}
+#choose {
+    margin:  2% 1% 2%;
+    padding: 10% auto;
+}
+#choose:hover {
+    background-color: rgba(72, 64, 95, 0.8);
+    border-radius: 5%;
+    padding: 30% auto;
+    display: block;
+    text-decoration: underline;
+    cursor: url("Images/musiccursor.png"), auto;
+}
+ div ul li:hover {
+    background-color: rgba(72, 64, 95, 0.8);
+    border-radius: 5%;
+    padding: 30% auto;
+    margin: auto 5px auto -5%;
+    text-decoration: underline;
+    cursor: url("Images/musiccursor.png"), auto;
+}
+footer {
+    margin: 5% auto -1%;
+    padding: 2% 1%;
+    text-align: center;
+    background-color: rgba(72, 64, 95, 0.8);
+    color:rgb(211, 205, 243);
+}

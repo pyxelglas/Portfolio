@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio - glas</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js">
+        </script>
+    </head>
+    <body>
+        <center>
+        <div class = "intro"> 
+               <h2>I am <u>glas.</u> Pixel Artist. Music Composer. Indie Game Dev. </h2>
+        
+        </div>
+        <br><br><br><br><br><br><br><br>
+  <div class = "skill">
+      <h3>Pixel Portraits</h3>
+    
+      <div class="pixelart">
+        <img id = "portrait" alt="Image Unavailable">
+        <button class = "next" onLoad="Sett" onclick="GoNext()">Next</button>
+      </div>
+  </div> <div class = "skill">
+    <h3>Original Music</h3>
+  
+    <div class="music">
+        <h4>Music Player</h4>
+        <p id = "title"></p>
+        <audio controls loop controlsList="nodownload" id = "player"><source id="song" type = "audio/wav">Audio</audio>
+        <h4 id ="choose" onclick = "Choose()">Choose Song</h4>
+        <ul id="music-list">
+            <li onclick = "Play(0)">Don't Cry</li>
+            <li onclick = "Play(1)">Guitar Warmth</li>
+            <li onclick = "Play(2)">hallucinogen</li>
+            <li onclick = "Play(3)">Ukelele Jingle</li>
+            <li onclick = "Play(4)">I wait Patiently</li>
+            <li onclick = "Play(5)">In Space</li>
+            <li onclick = "Play(6)">Without Hue</li>
+        </ul>
+    </div>
+</div>
+
+  </center>
+  <!--<img id = "portrait" src = "meportrait.png" alt = "My PixelArt Portrait">-->
+    </body>
+    <footer><p><strong>Contact Me</strong></p>
+    <p class = "Contacts">
+        <a href = "https://www.instagram.com/glasace/">Instagram</a><br><a href="https://pyxelglas.bandcamp.com/">Bandcamp</a><br><a href="https://ko-fi.com/pyxelglas">Kofi</a><br><a href="https://www.youtube.com/channel/UCd3lABPvzw6FBH4KK5PqbSw">Youtube</a><br><a href="https://glas-0.itch.io/">itch.io</a>
+        <br><br>Email: emailmeglas@gmail.com</p>
+    </footer>
+
+</html>
