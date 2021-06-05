@@ -3,7 +3,7 @@
   var imagear = [];
   var musicar = [];
   var namear = [];
-  var i = -1;
+  var i = 0;
   var player;
   var song;
   var port;
@@ -34,20 +34,22 @@ function Play(num)
     if (song.src !== musicar[num])
     {
         player.setAttribute('src', musicar[num]);
-        player.play();
         document.getElementById("title").innerHTML = "Song title: " + namear[num];
-        console.log(song.src);
     }
         
 }
 function Sett() 
 {
-  imagear.push("Images/redgirl.png")
-  imagear.push("Images/redguyport.png")
-  imagear.push("Images/sunnygoldport.png")
-  imagear.push("Images/naruto.gif")
-  imagear.push("Images/mom.png")
-  imagear.push("Images/bluehoodport.png")
+    imagear.push("Images/oneeyeguy.gif");
+  imagear.push("Images/redgirl.png");
+  imagear.push("Images/redguyport.png");
+  imagear.push("Images/sunnygoldport.png");
+  imagear.push("Images/naruto.gif");
+  imagear.push("Images/bluehoodport.png");
+  imagear.push("Images/comicgal.png");
+  imagear.push("Images/elfwithprop.png");
+  imagear.push("Images/normguy.png");
+  imagear.push("Images/braidportout.gif");
 
   musicar.push("Audio/Don't Cry.wav");
   musicar.push("Audio/Guitar Warmth.wav");
@@ -70,7 +72,7 @@ function Sett()
   choose = document.getElementById("music-list");
   port = document.getElementById("portrait");
 
-  port.src="Images/bluehoodport.png";
+  port.src="Images/oneeyeguy.gif";
   document.getElementById("music-list").style.display = "none";
   Play(0);
 }
