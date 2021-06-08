@@ -5,15 +5,18 @@ body {
     color: rgb(72, 64, 95);
  }
 
+ ::selection {
+    color:rgb(144, 151, 216);
+    background: rgb(72, 64, 95);
+  }
  body, .nav ul, .nav li {
     margin: 0;
     padding: 0;
     border: 0;
   }
   .nav {
-    background-color: rgb(171, 203, 240);
+    background-color: rgb(144, 151, 216);
     height: 60px; 
-    display: none;
   }
  .nav li {
     display: inline-block;
@@ -68,6 +71,7 @@ h4 {
     letter-spacing: 2px;
     /*box-shadow: 0px 0px 20px 4px rgb(72, 64, 95);*/
 }
+/* Old Next Style
 .next {
     display: inline-block;
     background-color: rgb(211, 205, 243);
@@ -83,6 +87,13 @@ h4 {
     background-color: rgba(211, 205, 243, 0.8);
     cursor: url("../Images/emojicursor.png"), auto;
 }
+#portrait {
+    height: 400px;
+    width: 400px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20%;
+}
+*/
 #pixel-info {
     padding-bottom: 6em;
 }
@@ -92,14 +103,42 @@ h4 {
     border-color: rgb(72, 64, 95);
     margin: 10% 20%;
 }
-#portrait {
-    height: 400px;
-    width: 400px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 20%;
-}
 #portrait:hover{
     cursor: url("../Images/emojicursor.png"), auto;
+}
+#port-container {
+  align-content: center;
+  align-items: center;
+  width: 450px;
+  height: 1200px;
+  display: block;
+  margin: -40% -7.5% -30% 20%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform-origin: center center;
+  transform:rotate(-90deg) translateY(-100px);
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+#portraits img{
+    border-radius: 20%;
+    height: 400px;
+    width: 400px;
+  display: inline-block;
+  transform:rotate(90deg);
+  transform-origin: center center;
+  padding: 30px;
+  margin: auto;
+  list-style: none;
+}
+#port-container:hover{
+    cursor: url("../Images/emojicursor.png"), auto;
+}
+#port-container::-webkit-scrollbar {
+display: none;
+}
+#desc {
+    margin: 0;
 }
 .music {
     box-shadow: 0 0 50px rgba(211, 205, 243, 0.4);

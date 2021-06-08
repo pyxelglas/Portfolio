@@ -1,0 +1,73 @@
+
+ body {
+    font-family: Tahoma;
+    align-content: center;
+    background-color: rgba(72, 64, 95, 0.8);
+    color: rgb(72, 64, 95);
+ }
+ ::selection {
+   color:rgb(144, 151, 216);
+   background: rgb(72, 64, 95);
+ }
+ body, .nav ul, .nav li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .nav {
+    background-color: rgb(144, 151, 216);
+    height: 60px; 
+  }
+ .nav li {
+    display: inline-block;
+    list-style: none;
+    height: 60px; 
+    line-height: 60px; 
+    padding: 0 40px; 
+  }
+  .nav a {
+    color: rgba(72, 64, 95);
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+ .nav li:hover {
+     background:rgb(211, 205, 243);
+    transition: background .5s;
+  }
+  h2 {
+      border-radius: 10px;  
+      background-color: rgb(211, 205, 243);
+      padding: 20px 5px;
+      font-size: 160%;
+      margin: 5% 35% 0.2%;
+  }
+  h3 {  
+      border-radius: 10px;  
+      background-color: rgb(211, 205, 243);
+      margin: 15px 20% 40px;
+      padding: 20px 10%;
+      font-size: 175%;
+  }
+  h4 {  
+      color: rgb(211, 205, 243);
+      margin: 35px;
+      padding: 20px 20% 20px 20%;
+      font-size: 130%;
+  }
+  button {
+        display: table;
+        margin: 0 auto;
+        box-shadow: 0 0 4px rgb(211, 205, 243);
+        border: 2px double rgba(211, 205, 243, 0.2);
+        border-radius: 2px;
+        padding: 10px 30px;
+        background-color: rgb(211, 205, 243);
+        color: rgb(72, 64, 95);
+  }
+  button:hover {
+    background: rgba(211, 205, 243, 0.8);
+    transition: background .2s;
+  }
+  button:active {
+    background: rgba(211, 205, 243, 0.2);
+  }

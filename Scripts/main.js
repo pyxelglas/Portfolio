@@ -3,11 +3,15 @@
   var imagear = [];
   var musicar = [];
   var namear = [];
+
+  var portdisplayed = [];
+  var portdesc = [];
   var i = 0;
   var player;
   var song;
   var port;
   var choose;
+  var portcontainer;
 
 function GoNext()
 {
@@ -40,16 +44,17 @@ function Play(num)
 }
 function Sett() 
 {
-    imagear.push("Images/oneeyeguy.gif");
-  imagear.push("Images/redgirl.png");
+  imagear.push("Images/oneeyeguy.gif");
   imagear.push("Images/redguyport.png");
+  imagear.push("Images/normguy.png");
   imagear.push("Images/sunnygoldport.png");
   imagear.push("Images/naruto.gif");
-  imagear.push("Images/bluehoodport.png");
+  imagear.push("Images/braidportout.gif");
   imagear.push("Images/comicgal.png");
   imagear.push("Images/elfwithprop.png");
-  imagear.push("Images/normguy.png");
-  imagear.push("Images/braidportout.gif");
+  imagear.push("Images/bluehoodport.png");
+
+  portdesc = ["Greyscale and Music"]
 
   musicar.push("Audio/Don't Cry.wav");
   musicar.push("Audio/Guitar Warmth.wav");
@@ -71,9 +76,50 @@ function Sett()
   song = document.getElementById("song");
   choose = document.getElementById("music-list");
   port = document.getElementById("portrait");
+  portcontainer = document.getElementById("port-container");
 
-  port.src="Images/oneeyeguy.gif";
+  AddPort();
+  SwitchPort();
+  /*port.src="Images/oneeyeguy.gif";*/
   document.getElementById("music-list").style.display = "none";
   Play(0);
 }
+
+/*
+function ShowDesc() {
+    var portclicked = document.createElement("img");
+    if (portcl)
+    if (portdisplayed.includes(portclicked))
+    {
+    portdisplayed.onmouseover = function() {
+        document.getElementById("desc").innerHTML = portdesc[portdisplayed.indexOf()]
+    };
+}
+}
+*/
+
+function AddPort() {
+    for (var i = 0; i < imagear.length; i++)
+    {
+    var port = document.createElement("img");
+    port.src = imagear[i];
+    port.alt = "Image Unavailable";
+    document.getElementById('portraits').appendChild(port);
+    portdisplayed += port;
+    }
+}
+
+function SwitchPort() {
+    var lastScrollTop = 0;
+    document.getElementById("port-container").addEventListener("scroll", function() { 
+   var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+   if (st > lastScrollTop){
+     console.log("down");
+   } else {
+    console.log("up");
+   }
+   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);
+}
+
 window.onload = Sett;

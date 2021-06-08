@@ -5,8 +5,12 @@ body, .nav ul, .nav li {
     padding: 0;
     border: 0;
  }
+ ::selection {
+   color:rgb(144, 151, 216);
+   background: rgb(72, 64, 95);
+ }
  body {
-  background-color: rgb(171, 203, 240);
+  background-color: rgb(144, 151, 216);
   color: rgb(72, 64, 95);
  }
  .nav {
@@ -29,38 +33,85 @@ body, .nav ul, .nav li {
      background:rgba(211, 205, 243, 0.4);
     transition: background .5s;
   }
-  .gen-container {
-    background:rgba(211, 205, 243);
-    width: 100px;
-    height: 500px;
-    margin: 1% 30% auto;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform-origin: right top;
-    transform:rotate(-90deg) translateY(-100px);
-    scrollbar-width: none;  /* Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
+.info {
+  padding: 5px 0px; margin: 2% 55% auto 10%;
 }
-.generators p {
-    display: inline-block;
-    transform:rotate(90deg);
-    transform-origin: right top;
-    padding: 15px;
-    list-style: none;
+.info ul {
+  background:rgba(211, 205, 243, 0.8);
 }
-.gen-container::-webkit-scrollbar {
-  display: none;
+.info li {
+  padding: 40px auto 20px 40px;
+  margin: 2px auto;
+}
+.info a {
+  text-decoration: solid;
+}
+.info a:hover {
+  text-decoration: underline;
+}
+h2 {
+    border-radius: 10px;  
+    background-color: rgb(211, 205, 243);
+    padding: 20px 25px;
+    font-size: 180%;
+    margin: 30px 30% 15px;
 }
 h3 {  
     border-radius: 10px;  
     background-color: rgb(211, 205, 243);
-    margin: -20px 5% 40px;
+    margin: 15px 20% 40px;
     padding: 20px 10%;
     font-size: 150%;
 }
 h4 {  
-    color: rgb(211, 205, 243);
-    margin: 1px 1px 60px;
-    padding: 20px 5%;
-    font-size: 100%;
+    color: rgb(72, 64, 95);
+    margin: 0.5px 0;
+    padding: 20px 1% 5px;
+    font-size: 125%;
+    letter-spacing: 1px;
+}
+.creations {
+  margin: 10% auto;
+}
+.aboutme p {
+  margin: 2% 10%;
+}
+p {
+  margin: 1% 10% 0% 0%;
+  padding: 5px 1px;
+}
+h4 a {
+  color: rgb(72, 64, 95);
+  padding: auto 1%;
+  text-decoration: none;
+}
+.creations {
+  background-color: rgba(72, 64, 95, 0.2);
+}
+footer p a {
+  color:rgb(211, 205, 243);
+    border-radius: 5%;
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+#choose {
+    margin:  2% 1% 2%;
+    padding: 10% auto;
+}
+#choose:hover {
+    background-color: rgba(72, 64, 95, 0.8);
+    border-radius: 5%;
+    padding: 30% auto;
+    display: block;
+    text-decoration: underline;
+    cursor: url("../Images/musiccursor.png"), auto;
+}
+footer {
+    margin: 5% auto -1%;
+    padding: 2% 1%;
+    text-align: center;
+    background-color: rgb(72, 64, 95, 0.8);
+    color:rgb(211, 205, 243);
 }
