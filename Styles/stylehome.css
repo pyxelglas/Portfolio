@@ -85,11 +85,25 @@ h4 a {
   padding: auto 1%;
   text-decoration: none;
 }
+h4 a:link {
+    color: rgb(72, 64, 95);
+    border-radius: 5%;
+    text-decoration: none;
+}
+h4 a:active {
+  color: rgb(144, 151, 216);
+}
+h4 a:hover {
+    text-decoration: underline;
+}
+h4 a:visited {
+    text-decoration: underline;
+}
 .creations {
   background-color: rgba(72, 64, 95, 0.2);
 }
 footer p a {
-  color:rgb(211, 205, 243);
+    color:rgb(211, 205, 243);
     border-radius: 5%;
     text-decoration: none;
 }
@@ -109,7 +123,7 @@ footer p a:hover {
     cursor: url("../Images/musiccursor.png"), auto;
 }
 footer {
-    margin: 5% auto -1%;
+    margin: 5% auto auto;
     padding: 2% 1%;
     text-align: center;
     background-color: rgb(72, 64, 95, 0.8);

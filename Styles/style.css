@@ -144,8 +144,8 @@ display: none;
     box-shadow: 0 0 50px rgba(211, 205, 243, 0.4);
     color:rgb(211, 205, 243);
     background-color: rgba(72, 64, 95, 0.8);
-    padding: 40px 0.5% 40px;
-    margin: 0.1px 90px 0.1px;
+    padding: 30px 0.5% 30px;
+    margin: 0.1px 100px 0.1px;
     padding: 10% auto;
     border-radius: 10%;
 }
@@ -198,7 +198,7 @@ footer p a:hover {
     cursor: url("../Images/musiccursor.png"), auto;
 }
 footer {
-    margin: 5% auto -1%;
+    margin: 5% auto auto;
     padding: 2% 1%;
     text-align: center;
     background-color: rgba(72, 64, 95, 0.8);

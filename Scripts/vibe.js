@@ -5,7 +5,7 @@ var firstword = ["cool", "mad", "young", "wise", "old", "awful", "bad", "happy",
 "trapped", "naive", "innocent", "dirty", "squeaky", "jiggly", "unpredictable", "curious", "self-proclaimed",
 "forgetful", "soft", "scary", "explosive", "busy", "chaotic", "neutral", "awful", "messy", "extreme", "fragile",
 "confused", "dizzy", "crying", "screaming", "aloof", "Christian", "fresh", "busted", "morning", "evening", "afternoon",
-"delusional", "fierce", "deep", "hateful", "burning", "quirky", "high", "angelic", "floating", "big", "spoiled", 
+"delusional", "fierce", "deep", "hateful", "burning", "quirky", "high", "angelic", "floating", "gigantic", "spoiled", 
 "proud", "hungry", "silent", "drowning", "dark", "quiet", "winter", "summer", "autumn", "grey", "purple", "spicy",
 "harmonic", "warm", "heartwarming", "beautiful", "messy","perfect", "huggable", "paralyzed"
 ];

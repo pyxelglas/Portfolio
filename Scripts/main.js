@@ -4,11 +4,11 @@
   var musicar = [];
   var namear = [];
 
+  var playing;
   var portdisplayed = [];
   var portdesc = [];
   var i = 0;
   var player;
-  var song;
   var port;
   var choose;
   var portcontainer;
@@ -35,26 +35,33 @@ else {
 }
 function Play(num)
 {
-    if (song.src !== musicar[num])
+    if (playing != num)
     {
         player.setAttribute('src', musicar[num]);
         document.getElementById("title").innerHTML = "Song title: " + namear[num];
+        player.play();
+        playing = num;
     }
         
 }
 function Sett() 
 {
   imagear.push("Images/oneeyeguy.gif");
-  imagear.push("Images/redguyport.png");
-  imagear.push("Images/normguy.png");
+  imagear.push("Images/bluehairport.png");
+  imagear.push("Images/scarfcurlyport.gif");
   imagear.push("Images/sunnygoldport.png");
   imagear.push("Images/naruto.gif");
+  imagear.push("Images/redguyport.png");
   imagear.push("Images/braidportout.gif");
   imagear.push("Images/comicgal.png");
   imagear.push("Images/elfwithprop.png");
   imagear.push("Images/bluehoodport.png");
+  imagear.push("Images/normguy.png");
+  imagear.push("Images/bibport.png");
+  imagear.push("Images/farlookgameboyport.png");
+  imagear.push("Images/grognakport.png");
 
-  portdesc = ["Greyscale and Music"]
+  portdesc = ["Greyscale and Music"];
 
   musicar.push("Audio/Don't Cry.wav");
   musicar.push("Audio/Guitar Warmth.wav");
@@ -63,6 +70,8 @@ function Sett()
   musicar.push("Audio/I wait Patiently.wav");
   musicar.push("Audio/longspace1.wav");
   musicar.push("Audio/Without Hue.wav");
+  musicar.push("Audio/hype.wav");
+  musicar.push("Audio/softecho.wav");
 
   namear[0] = "Don't Cry";
   namear[1] = "Guitar Warmth";
@@ -71,9 +80,10 @@ function Sett()
   namear[4] = "I wait Patiently";
   namear[5] = "In Space";
   namear[6] = "Without Hue";
+  namear[7] = "Hype";
+  namear[8] = "Soft Echo";
   
   player = document.getElementById("player");
-  song = document.getElementById("song");
   choose = document.getElementById("music-list");
   port = document.getElementById("portrait");
   portcontainer = document.getElementById("port-container");
