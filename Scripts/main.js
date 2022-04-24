@@ -47,10 +47,9 @@ function Play(num)
 function Sett() 
 {
   imagear.push("Images/oneeyeguy.gif");
-  imagear.push("Images/bluehairport.png");
+  imagear.push("Images/meportrait.png");
   imagear.push("Images/scarfcurlyport.gif");
   imagear.push("Images/sunnygoldport.png");
-  imagear.push("Images/naruto.gif");
   imagear.push("Images/redguyport.png");
   imagear.push("Images/braidportout.gif");
   imagear.push("Images/comicgal.png");
@@ -58,8 +57,10 @@ function Sett()
   imagear.push("Images/bluehoodport.png");
   imagear.push("Images/normguy.png");
   imagear.push("Images/bibport.png");
+  imagear.push("Images/naruto.gif");
   imagear.push("Images/farlookgameboyport.png");
   imagear.push("Images/grognakport.png");
+  imagear.push("Images/bluehairport.png");
 
   portdesc = ["Greyscale and Music"];
 
@@ -131,5 +132,7 @@ function SwitchPort() {
    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }, false);
 }
+
+
 
 window.onload = Sett;

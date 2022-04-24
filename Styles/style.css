@@ -53,13 +53,20 @@ h3 {
     background-color: rgb(211, 205, 243);
     margin: 15px 20% 40px;
     padding: 20px 10%;
-    font-size: 150%;
+    font-size: 125%;
 }
 h4 {  
     color: rgb(211, 205, 243);
     margin: 10px 40px 60px;
     padding: 20px 20% 20px 20%;
     font-size: 100%;
+}
+h5 {
+    border-radius: 10px;  
+    background-color: rgb(211, 205, 243);
+    margin: 15px 20% 40px;
+    padding: 20px 10%;
+    font-size: 125%;
 }
 .intro h3 {
     font-size: 100%;
@@ -131,7 +138,15 @@ h4 {
   margin: auto;
   list-style: none;
 }
-#port-container:hover{
+#background 
+{
+    height: 190%;
+    width: 190%;
+    margin: 40px -50%;
+    padding: 10px 30px;
+    border-radius: 15%;
+}
+#port-container:hover,#bg-container:hover{
     cursor: url("../Images/emojicursor.png"), auto;
 }
 #port-container::-webkit-scrollbar {
